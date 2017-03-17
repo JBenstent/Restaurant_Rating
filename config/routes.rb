@@ -6,7 +6,13 @@ Rails.application.routes.draw do
 
   root 'restaurant#display_all'
 
+
+#USER GET ROUTES
   get 'user/index'
+
+#USER POST ROUTES
+  post 'user/create' => 'user#create'
+  post 'user/login' => 'user#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
