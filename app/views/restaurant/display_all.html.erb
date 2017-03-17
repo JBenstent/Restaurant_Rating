@@ -5,7 +5,7 @@
 <br>
 <div class="rating">
 <% @restaurant.each do |rest| %>
-  <p><a href="/restaurant/<%=rest.id%>"><%= rest.name %></a></p>
+  <p><a href="/rating/<%=rest.id%>"><%= rest.name %></a></p>
   <p><%= rest.avgrating %></p>
 <% end %>
 </div>

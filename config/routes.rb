@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
 #RATING GET ROUTES
   get 'rating/create_rating'
+  get 'rating/:id' => 'rating#showratingform'
+
+#RATING POST ROUTES
+  post 'restaurant/create_rating' => 'rating#create_rating'
 
 #RESTAURANT GET ROUTES
   get 'restaurant/create'
@@ -13,13 +17,11 @@ Rails.application.routes.draw do
 
 #USER GET ROUTES
   get 'user/index'
-  get 'restaurant/:id' => 'rating#showratingform'
   get 'user/clear' => "user#sessionclear"
 
 #USER POST ROUTES
   post 'user/create' => 'user#create'
   post 'user/login' => 'user#login'
-  post 'restaurant/create_rating' => 'rating#create_rating'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
