@@ -20,7 +20,7 @@ class UserController < ApplicationController
   def login
     @user = User.find_by(email: params[:email])
     if !@user
-      flash[:errors] = ['Login credentials are invalid']
+      flash[:errors] = ['Login credentials are invalidvagrant ']
       redirect_to '/user/index'
     elsif @user.password != params[:password]
       flash[:errors] = ['Invalid password']

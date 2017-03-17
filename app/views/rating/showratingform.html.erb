@@ -1,0 +1,9 @@
+<h3>Post Rating for Restaurant</h3>
+
+<form action="/restaurant/create_rating" method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+  <p>Rating <input type="integer" name="rating" value=""></p>
+  <input type="hidden" name="restaurant_id" value="<%= params[:id]%>">
+  <input type="submit" name="" value="Submit Rating">
+
+</form>

@@ -9,5 +9,7 @@ class RestaurantController < ApplicationController
 
   def display_all
     @restaurant = Restaurant.all
+
+
   end
 end
