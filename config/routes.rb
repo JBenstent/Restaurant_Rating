@@ -10,8 +10,10 @@ Rails.application.routes.draw do
 #USER GET ROUTES
   get 'user/index'
 
+
 #USER POST ROUTES
   post 'user/create' => 'user#create'
+  get 'user/clear' => "user#sessionclear"
   post 'user/login' => 'user#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
