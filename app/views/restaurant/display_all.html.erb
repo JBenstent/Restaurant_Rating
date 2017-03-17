@@ -1,4 +1,9 @@
-<h1>Restaurant#display_all</h1>
-<p>Find me in app/views/restaurant/display_all.html.erb</p>
-
 <a href="/user/clear">Logout</a>
+<a href="/restaurant/create">Create</a>
+
+<br>
+<br>
+
+<% @restaurant.each do |rest| %>
+  <p><%= rest.name %></p>
+<% end %>

@@ -1,15 +1,18 @@
 Rails.application.routes.draw do
 
+#RATING GET ROUTES
   get 'rating/create_rating'
 
+#RESTAURANT GET ROUTES
   get 'restaurant/create'
-
   root 'restaurant#display_all'
+
+#RESTAURANT POST ROUTES
+  post 'restaurant/submit' => 'restaurant#submit'
 
 
 #USER GET ROUTES
   get 'user/index'
-
 
 #USER POST ROUTES
   post 'user/create' => 'user#create'
